@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maitree&display=swap');
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+html {
+  font-size: 0.0652vw;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    font-family: 'Lora', serif;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+html {
+  font-size: 0,0652vw;
+}
+
+.news__sub {
+  background-color: #F5F5F5;
+}
+.news__header {
+  background-color: #7D9F9B;
+  margin-bottom: 33rem;
+  height: 128rem;
+}
+.news__sub__header {
+  max-width: 1200rem;
+  margin: 0 auto;
+}
+.news__sub__header h1 {
+  font-size: 50rem;
+  line-height: 64rem;
+  color: #ffff;
+  font-weight: 400;
+  padding-top: 40rem;
+}
+
+
+.news__fair-sub {
+  max-width: 1200rem;
+  margin: 0 auto;
+}
+.news__fair-blok {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 33rem;
+}
+.image28 {
+  max-width: 669rem;
+}
+.news__fair-sub p {
+  font-family: 'Maitree', serif;
+  font-size: 21rem;
+  line-height: 35rem;
+  color: black;
+  margin-bottom: 200rem;
+}
+
+
+.news_btn {
+  display: flex;
+  justify-content: end;
+
+  text-decoration: none;
+}
+.news__btn-sub {
+  background-color: #7D9F9B;
+  max-width: 267rem;
+  
+  padding: 20rem 20rem;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 21rem;
+}
+.news__btn-sub:hover {
+  background-color: #256d65;
+  transition: 1s;
+  max-width: 290rem;
+}
+.news__btn-sub img {
+  max-width: 59rem;
+}
+.news__btn-sub h3 {
+  font-size: 33rem;
+  line-height: 42rem;
+  color: #ffff;
+  font-weight: 400;
+}
+
+@media all and (max-width: 1024px) {
+  .news__fair-blok {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .image28 {
+    max-width: 100%;
+    margin: auto;
+    padding-bottom: 20rem;
+  }
+
+  .news__fair-sub p {
+    font-family: 'Maitree', serif;
+    font-size: 32rem;
+    line-height: 35rem;
+    color: black;
+    margin-bottom: 200rem;
+  }
+}
